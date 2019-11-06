@@ -1,0 +1,45 @@
+/*
+forest query
+*/
+(
+way
+  [natural=wood]
+  (49.129,8.202,49.786,9.246);
+way
+  [landuse=forest]
+  (49.129,8.202,49.786,9.246);
+way
+  [landcover=trees]
+  (49.129,8.202,49.786,9.246);
+rel
+  [natural=wood]
+  (49.129,8.202,49.786,9.246);
+rel
+  [landuse=forest]
+  (49.129,8.202,49.786,9.246);
+rel
+  [landcover=trees]
+  (49.129,8.202,49.786,9.246);
+);
+/*added by auto repair*/
+(._;>;);
+/*end of auto repair*/
+out;
+
+/*
+highway query
+*/
+/*
+This is an example Overpass query.
+Try it out by pressing the Run button above!
+You can find more examples with the Load tool.
+*/
+(
+way
+  ["highway"~"primary|trunk|motorway"]
+  (49.129,8.202,49.786,9.246);
+);
+/*added by auto repair*/
+(._;>;);
+/*end of auto repair*/
+out;
